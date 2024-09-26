@@ -1,5 +1,7 @@
 import ResCard from "./ResCard";
 import { useState, useEffect } from "react";
+import Shimmer from "./Shimmer";
+
 
 const Body = () => {
     const [listofres, setListOfRes] = useState([]);
@@ -32,7 +34,7 @@ const Body = () => {
     //     return <h1>Loading...</h1>;
     // }
 
-    return  listofres.length === 0 ? (<h1>Loading...</h1>):(
+    return  listofres.length === 0 ? (<Shimmer/>):(
         <div className="body-container">
 
             <div className="filter-box">
