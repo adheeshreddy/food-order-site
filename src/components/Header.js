@@ -1,5 +1,6 @@
 import { LOGO_URL } from "../utils/links";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Header=()=>{
 
@@ -11,9 +12,9 @@ export const Header=()=>{
                     <img className="logo" src={LOGO_URL}></img>
             </div>
             <div className="nav-items">
-                <h3>home</h3>
-                <h3>About us</h3>
-                <h3>Contact us</h3>
+                <h3><Link to="/">Home</Link></h3>
+                <h3><Link to="/about">About us</Link></h3>
+                <h3><Link to="/contact">Contact us</Link></h3>
                 <h3>Cart</h3>
                 <button className="login-btn" onClick={()=>{
                     // btnName="logout";
