@@ -1,6 +1,7 @@
 import ResCard from "./ResCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
     const [listofres, setListOfRes] = useState([]);
@@ -42,7 +43,7 @@ const Body = () => {
             const json = await data.json();
             // console.log(json);
             
-            const restaurants = json?.data?.cards?.[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+            const restaurants = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
             console.log("updated fetched data");
             setListOfRes(restaurants);
             setfilteredList(restaurants);
@@ -92,7 +93,7 @@ const Body = () => {
             </div>
             <div className="res-container">
                 {filteredList.map((restaurant) => (
-                    <ResCard key={restaurant.info.id} resdata={restaurant} />
+                    <Link to={"/restaurants/"+ restaurant.info.id}> <ResCard key={restaurant.info.id} resdata={restaurant} /> </Link>
                 ))}
             </div>
         </div>
