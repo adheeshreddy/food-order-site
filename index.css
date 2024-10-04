@@ -84,3 +84,8 @@
     flex-wrap: wrap;
     gap: 40px;
 }
+.user-card{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
