@@ -1,4 +1,12 @@
+import {useEffect} from "react";
 const Contact=()=>{
+    // useEffect(() => {
+    //     const time=setInterval(()=>{console.log("hello world")},1000);
+    //     return () => {
+    //         clearInterval(time);
+    //     };
+    // }, []);
+
     return(
         <div>
             <h1>this is Contact us page</h1>
