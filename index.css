@@ -75,7 +75,7 @@
     height: 400px;
     width: 300px;
     background-color: #f0f0f0;
-    border: 1px solid white;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 20px;
 }
 .shimmer-container{

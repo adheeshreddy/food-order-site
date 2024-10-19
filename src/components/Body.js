@@ -2,7 +2,7 @@ import ResCard from "./ResCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
-
+import useOnlineStatus from "../utils/useOnlineStatus";
 const Body = () => {
     const [listofres, setListOfRes] = useState([]);
     const [textvalue,setTextValue]=useState("");
@@ -53,10 +53,14 @@ const Body = () => {
         }
     };
 
+    const onlineStatus=useOnlineStatus();
     // if ( listofres.length === 0) {
     //     return <h1>Loading...</h1>;
     // }
 
+    if(onlineStatus===false){
+        return(<h1>Looks like you are offline , Play some dino game till then</h1>)
+    }
     return  listofres.length === 0 ? (<Shimmer/>):(
         <div className="body-container">
 
