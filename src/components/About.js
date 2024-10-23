@@ -13,7 +13,7 @@ class About extends React.Component{
     render(){
         console.log("parent render");
         return(
-            <div>
+            <div className="pt-36">
                 <h1>this is about us page</h1>
                 <h2>welcome to this page</h2>
                 {/* <User name={"adheesh func"} location={"hyderabad func"}/> */}

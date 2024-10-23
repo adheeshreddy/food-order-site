@@ -64,7 +64,7 @@ const Body = () => {
     return  listofres.length === 0 ? (<Shimmer/>):(
         <div className="body-container">
 
-            <div className=" flex p-10 gap-7 font-semibold text-lg filter-box">
+            <div className=" pt-40 flex justify-center align-middle p-10 gap-7 font-semibold text-lg filter-box">
               
           <div className="text-input ">
             <input className=" border-solid border-2 border-gray-700 rounded-md p-2 " type="text" placeholder="enter restaurant name..." value={textvalue} onChange={(e)=>{
@@ -96,7 +96,7 @@ const Body = () => {
                     Top Rated Restaurants
                 </button>
             </div>
-            <div className=" flex flex-wrap m-5 p-5 justify-around gap-11 res-container">
+            <div className=" flex flex-wrap  py-1 px-52 justify-center gap-5 res-container">
                 {filteredList.map((restaurant) => (
                     <Link to={"/restaurants/"+ restaurant.info.id}> <ResCard key={restaurant.info.id} resdata={restaurant} /> </Link>
                 ))}

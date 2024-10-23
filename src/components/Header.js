@@ -7,22 +7,24 @@ export const Header=()=>{
     const onlineStatus=useOnlineStatus();
 
     const[btnName,setbtnName]=useState("login");
+    const[logincolor,setlogincolor]=useState("green");
     // let btnName="login";
     return(
-        <div className="flex justify-between items-center justify-center bg-gray-300">
+        <div className=" fixed flex justify-around items-center w-full h-20 bg-gray-50 shadow-lg">
             <div className="logo-box ">
-                    <img className="logo w-44" src={LOGO_URL}></img>
+                    <img className="logo w-36 h-20" src={LOGO_URL}></img>
             </div>
-            <div className="nav-items text-2xl p-3 flex justify-between gap-10 font-medium justify-center align-middle">
+            <div className="nav-items text-2xl p-3 flex  gap-10 font-medium justify-center align-middle">
                 <h3>Online status :{onlineStatus?"🟢":"🔴"}</h3>
-                <h3 className=" text-gray-900 hover:text-gray-400"><Link to="/">Home</Link></h3>
-                <h3 className=" text-gray-900 hover:text-gray-400"><Link to="/about">About us</Link></h3>
-                <h3 className=" text-gray-900 hover:text-gray-400"><Link to="/contact">Contact us</Link></h3>
-                <h3 className=" text-gray-900 hover:text-gray-400"><Link to="/grocery">Grocery</Link></h3>
-                <h3 className=" text-gray-900 hover:text-gray-400">Cart</h3>
-                <button className="login-btn border-2 border-slate-200 p-2 rounded-sm align-middle" onClick={()=>{
+                <h3 className=" text-gray-900 hover:text-orange-400"><Link to="/">Home</Link></h3>
+                <h3 className=" text-gray-900 hover:text-orange-400"><Link to="/about">About us</Link></h3>
+                <h3 className=" text-gray-900 hover:text-orange-400"><Link to="/contact">Contact us</Link></h3>
+                <h3 className=" text-gray-900 hover:text-orange-400"><Link to="/grocery">Grocery</Link></h3>
+                <h3 className=" text-gray-900 hover:text-orange-400 cursor-pointer">Cart</h3>
+                <button className={`login-btn align-middle text-gray-900 hover:text-${btnName==="login"?"green":"red"}-400`} onClick={()=>{
                     // btnName="logout";
                     btnName=="login"?setbtnName("logout"):setbtnName("login");
+                    
                     console.log(btnName);
                 }}>{btnName}</button>
             </div>

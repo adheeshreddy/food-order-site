@@ -8,7 +8,7 @@ const Contact=()=>{
     // }, []);
 
     return(
-        <div>
+        <div className="pt-36">
             <h1>this is Contact us page</h1>
             <h2>welcome to this page</h2>
         </div>
