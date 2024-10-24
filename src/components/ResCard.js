@@ -18,4 +18,15 @@ import { IMG_URL } from "../utils/links";
        )
    };
 
+
+export const ResCardWithTag=(ResCard)=>{
+
+    return (props)=>{
+        <div>
+            <label>promoted</label>
+            <ResCard {...props}/>
+        </div>
+    }
+}
+
    export default ResCard;

@@ -1,4 +1,4 @@
-import ResCard from "./ResCard";
+import ResCard,{ResCardWithTag} from "./ResCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -8,6 +8,8 @@ const Body = () => {
     const [textvalue,setTextValue]=useState("");
     const[filteredList,setfilteredList]=useState([]);
 
+    const ResCardnew= ResCardWithTag(ResCard);
+    console.log(filteredList);  
     console.log("body component rendered");
 
     useEffect(() => {
@@ -98,7 +100,15 @@ const Body = () => {
             </div>
             <div className=" flex flex-wrap  py-1 px-52 justify-center gap-5 res-container">
                 {filteredList.map((restaurant) => (
-                    <Link to={"/restaurants/"+ restaurant.info.id}> <ResCard key={restaurant.info.id} resdata={restaurant} /> </Link>
+                    <Link key={restaurant.info.id} to={"/restaurants/"+ restaurant.info.id}> 
+                    {/* {
+                    restaurant.info.aggregatedDiscountInfoV3!=="" ?
+                    (<ResCardnew  resdata={restaurant} />) : (<ResCard resdata={restaurant} />)
+                    } */}
+                    {
+                     restaurant.info.aggregatedDiscountInfoV3!==""  && <ResCard resdata={restaurant} />
+                }
+                     </Link>
                 ))}
             </div>
         </div>
