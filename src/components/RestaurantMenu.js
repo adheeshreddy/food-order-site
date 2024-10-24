@@ -31,7 +31,7 @@ console.log(itemsinfo.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card.ca
 const cardinfo=itemsinfo.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards;
 
 return(
-    <div className="resMenu">
+    <div className="resMenu pt-36">
         <h1>{resName}</h1>
         <h3>Menu items in {resName}</h3>
         {/* <li>{res.card?.info?.name}</li> */}
