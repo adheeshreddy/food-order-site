@@ -1,0 +1,91 @@
+.head-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: azure;
+  }
+.app-list{
+    padding: 10px;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+}
+.nav-items{
+    padding: 10px;
+    display: flex;
+    gap: 60px;
+}
+.nav-items > h3{
+    font-size: 30px;
+    font-weight: 300;
+}
+.card{
+    padding: 10px;
+    height: 400px;
+    width: 300px;
+    background-color: #f0f0f0;
+    border: 1px solid white;
+    /* overflow: auto; */
+    border-radius: 20px;
+}
+.card:hover{
+    border: 1px solid black;
+    cursor: pointer;
+    outline: royalblue;
+    background-color: blanchedalmond;
+}
+.search{
+    margin: 10px;
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 40px;
+    /* justify-content: center; */
+    align-items: center;
+}
+.resimg{
+    width: 100%;
+    height: 60%;
+    /* padding: 5px; */
+    border-radius: 5px;
+}
+.card-details > h4{
+    font-size: 18px;
+}
+.filter-btn{
+    margin: 10px;
+}
+.login-btn{
+    padding: 0 20px;
+    cursor: pointer;
+}
+.text-input{
+    display: flex;
+}
+.filter-box{
+    display: flex;
+}
+.shimmer-card{
+    padding: 5px;
+    height: 400px;
+    width: 300px;
+    background-color: #f0f0f0;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.shimmer-container{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.user-card{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
