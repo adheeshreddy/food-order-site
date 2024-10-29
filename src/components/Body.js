@@ -106,7 +106,8 @@ const Body = () => {
                     (<ResCardnew  resdata={restaurant} />) : (<ResCard resdata={restaurant} />)
                     } */}
                     {
-                     restaurant.info.aggregatedDiscountInfoV3!==""  && <ResCard resdata={restaurant} />
+                        // (restaurant?.info?.aggregatedDiscountInfoV3 !== "") ? (<ResCard resdata={restaurant}/> ) : (<ResCardnew resdata={restaurant}/>)
+                     (restaurant?.info?.aggregatedDiscountInfoV3) ? (<ResCardnew resdata={restaurant}/> ): (<ResCard resdata={restaurant}/>)
                 }
                      </Link>
                 ))}
