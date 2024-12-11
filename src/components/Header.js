@@ -16,8 +16,8 @@ export const Header=()=>{
             </div>
             <div className="nav-items text-2xl p-3 flex  gap-10 font-medium justify-center align-middle">
                 <h3>Online status :{onlineStatus?"🟢":"🔴"}</h3>
-                <h3 className=" text-gray-900 hover:text-orange-800"><Link to="/">Home</Link></h3>
-                <h3 className=" text-gray-900 hover:text-orange-400"><Link to="/contact">About us</Link></h3>
+                <h3 className=" text-gray-900 hover:text-orange-400"><Link to="/">Home</Link></h3>
+                <h3 className=" text-gray-900 hover:text-orange-400"><Link to="/about">About us</Link></h3>
                 <h3 className=" text-gray-900 hover:text-orange-400"><Link to="/contact">Contact us</Link></h3>
                 <h3 className=" text-gray-900 hover:text-orange-400"><Link to="/grocery">Grocery</Link></h3>
                 <h3 className=" text-gray-900 hover:text-orange-400 cursor-pointer">Cart</h3>
