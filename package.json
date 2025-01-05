@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/adheeshreddy/react-practice/issues"
   },
-  "homepage": "https://github.com/adheeshreddy/react-practice#readme",
+  "homepage": "https://github.com/adheeshreddy/food-order-site",
   "devDependencies": {
     "parcel": "^2.12.0",
     "postcss": "^8.4.47",
