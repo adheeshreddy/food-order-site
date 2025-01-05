@@ -101,14 +101,7 @@ const Body = () => {
             <div className=" flex flex-wrap  py-1 px-52 justify-center gap-5 res-container">
                 {filteredList.map((restaurant) => (
                     <Link key={restaurant.info.id} to={"/restaurants/"+ restaurant.info.id}> 
-                    {/* {
-                    restaurant.info.aggregatedDiscountInfoV3!=="" ?
-                    (<ResCardnew  resdata={restaurant} />) : (<ResCard resdata={restaurant} />)
-                    } */}
-                    {/* {
-                        // (restaurant?.info?.aggregatedDiscountInfoV3 !== "") ? (<ResCard resdata={restaurant}/> ) : (<ResCardnew resdata={restaurant}/>)
-                     (restaurant?.info?.aggregatedDiscountInfoV3) ? (<ResCardnew resdata={restaurant}/> ): (<ResCard resdata={restaurant}/>)
-                } */}
+    
                 <ResCard resdata={restaurant}/>
                      </Link>
                 ))}

@@ -10,7 +10,7 @@ export const Header=()=>{
     const[logincolor,setlogincolor]=useState("green");
     // let btnName="login";
     return(
-        <div className=" fixed flex justify-around items-center w-full h-20 bg-gray-50 shadow-lg">
+        <div className=" fixed flex justify-around items-center w-full h-20 z-10 bg-gray-50 shadow-lg">
             <div className="logo-box ">
                     <img className="logo w-36 h-20" src={LOGO_URL}></img>
             </div>
