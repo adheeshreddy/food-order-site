@@ -1,7 +1,7 @@
 {
-  "name": "react-practice",
+  "name": "food-order-site",
   "version": "1.0.0",
-  "description": "this is for practice ",
+  "description": "This is a food ordering site.",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adheeshreddy/react-practice.git"
+    "url": "git+https://github.com/adheeshreddy/food-order-site.git"
   },
   "author": "adheesh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/adheeshreddy/react-practice/issues"
+    "url": "https://github.com/adheeshreddy/food-order-site/issues"
   },
   "homepage": "https://github.com/adheeshreddy/food-order-site",
   "devDependencies": {
@@ -29,6 +29,6 @@
     "react-router-dom": "^6.26.2"
   },
   "browsersList": [
-    "last 2  chrome versions"
+    "last 2 chrome versions"
   ]
 }
